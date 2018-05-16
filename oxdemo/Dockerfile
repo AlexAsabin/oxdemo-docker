@@ -12,4 +12,7 @@ WORKDIR /home/oxuser/projects/oxdemo
 RUN dotnet restore
 RUN dotnet build
 
+USER root
+RUN dotnet publish oxdemo.csproj -o /home/oxuser/www
+
 ENTRYPOINT ["/usr/bin/supervisord"]
