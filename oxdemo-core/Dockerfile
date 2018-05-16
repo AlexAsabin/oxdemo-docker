@@ -20,7 +20,6 @@ RUN apt-get update
 
 #Install Supervisor
 RUN apt-get install -y supervisor
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 5000/tcp
 
