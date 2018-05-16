@@ -3,12 +3,12 @@ MAINTAINER Alex Asabin
 
 RUN apt-get update
 
-#Clone OXF from github application
+#Clone oxdemo from github application
 WORKDIR /root/projects
 RUN git clone https://github.com/AlexAsabin/oxdemo
 
-#Build OXF
-WORKDIR /root/projects/oxf
+#Build oxdemo
+WORKDIR /root/projects/oxdemo
 RUN dotnet restore
 RUN dotnet build
 
