@@ -4,11 +4,11 @@ MAINTAINER Alex Asabin
 RUN apt-get update
 
 #Clone oxdemo from github application
-WORKDIR /root/projects
+WORKDIR /home/oxuser/projects
 RUN git clone https://github.com/AlexAsabin/oxdemo
 
 #Build oxdemo
-WORKDIR /root/projects/oxdemo
+WORKDIR /home/oxuser/projects
 RUN dotnet restore
 RUN dotnet build
 
