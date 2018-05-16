@@ -1,8 +1,6 @@
 FROM dhub.sqil.by/oxdemo/oxdemo-core
 MAINTAINER Alex Asabin
 
-RUN apt-get update
-
 #Clone oxdemo from github application
 WORKDIR /home/oxuser/projects
 RUN git clone https://github.com/AlexAsabin/oxdemo

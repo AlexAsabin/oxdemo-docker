@@ -8,6 +8,7 @@ RUN apt-get install -y apt-transport-https
 RUN apt-get install -y apt-utils
 RUN apt-get install -y curl 
 RUN apt-get install -y software-properties-common
+RUN apt-get install -y git
 
 #Install Dot.Net
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
