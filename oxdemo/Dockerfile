@@ -2,6 +2,7 @@ FROM dhub.sqil.by/oxdemo/oxdemo-core
 MAINTAINER Alex Asabin
 
 #Clone oxdemo from github application
+USER oxuser
 WORKDIR /home/oxuser/projects
 RUN git clone https://github.com/AlexAsabin/oxdemo
 
